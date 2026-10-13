@@ -2,7 +2,7 @@
 Skybox to ReachPro -- installer
 
 Downloads the latest published build, verifies SHA256, installs to
-Documents\Skybox-to-reachpro (no admin), adds shortcuts, and launches.
+Documents\Skybox-to-reachpro(API) (no admin), adds shortcuts, and launches.
 
 Safe to re-run to reinstall or force-update (close the app first if running).
 
@@ -29,7 +29,7 @@ function Fail([string]$Context, $ErrorRecord) {
 
 $Repo = "Mustafahubs/Skybox-to-reachpro-public"
 $ExeName = "skybox_to_reachpro.exe"
-$InstallDir = Join-Path ([Environment]::GetFolderPath("MyDocuments")) "Skybox-to-reachpro"
+$InstallDir = Join-Path ([Environment]::GetFolderPath("MyDocuments")) "Skybox-to-reachpro(API)"
 $ExePath = Join-Path $InstallDir $ExeName
 $Headers = @{ "User-Agent" = "skybox-to-reachpro-installer" }
 
