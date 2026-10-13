@@ -16,7 +16,7 @@ irm https://raw.githubusercontent.com/Mustafahubs/Skybox-to-reachpro-public/main
 powershell -NoProfile -ExecutionPolicy Bypass -Command "$p = Join-Path $env:TEMP 'reachpro-install.ps1'; iwr -UseBasicParsing 'https://raw.githubusercontent.com/Mustafahubs/Skybox-to-reachpro-public/main/install.ps1' -OutFile $p; & $p"
 ```
 
-This downloads the latest [Release](https://github.com/Mustafahubs/Skybox-to-reachpro-public/releases/latest), verifies SHA256, installs to `Documents\Skybox-to-reachpro`, adds Start Menu / Desktop shortcuts, and launches the app. No administrator rights required.
+This downloads the latest [Release](https://github.com/Mustafahubs/Skybox-to-reachpro-public/releases/latest), verifies SHA256, installs to `Documents\Skybox-to-reachpro(API)` (e.g. `C:\Users\Administrator\Documents\Skybox-to-reachpro(API)` on the RDP account), adds Start Menu / Desktop shortcuts, and launches the app. No administrator rights required.
 
 After install, copy your `.env` (StubHub / ReachPro settings) into that folder next to the exe.
 
